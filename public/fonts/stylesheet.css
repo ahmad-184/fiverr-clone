@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Macan";
+  src: url("MacanPanWeb-Regular.eot");
+  src: url("MacanPanWeb-Regular.eot?#iefix") format("embedded-opentype"),
+    url("MacanPanWeb-Regular.woff2") format("woff2"),
+    url("MacanPanWeb-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Domain-display";
+  src: url("DomaineDisplay-Bold.eot");
+  src: url("DomaineDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("DomaineDisplay-Bold.woff2") format("woff2"),
+    url("DomaineDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
