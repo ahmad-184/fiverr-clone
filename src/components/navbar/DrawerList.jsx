@@ -33,7 +33,7 @@ export default function DrawerList() {
           backgroundColor: "transparent !important",
           transition: "0.2s all ease-in-out",
           color: "grey.600",
-          "&:hover": { color: "grey.700" },
+          "&:hover": { color: "grey.900" },
           paddingY: "4.5px",
         },
       }}
@@ -50,7 +50,7 @@ export default function DrawerList() {
           <ListItemText primary="Sign in" />
         </ListItemButton>
         <ListItemButton disableRipple onClick={handleOpenCategoryList}>
-          <ListItemText primary="Browser category" />
+          <ListItemText primary="Browser categories" />
           {categoryListOpen ? <ExpandLess /> : <ExpandMore />}
         </ListItemButton>
         <Collapse in={categoryListOpen} timeout="auto" unmountOnExit>

@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <Box paddingTop="7rem">
+      <Box>
         <Outlet />
       </Box>
     </>
