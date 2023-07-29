@@ -1,11 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+
+import Header from "./header/Header";
 
 const Home = () => {
   return (
     <Box>
-      <Typography variant="h4" textAlign="center">
-        home page
-      </Typography>
+      <Header />
     </Box>
   );
 };
