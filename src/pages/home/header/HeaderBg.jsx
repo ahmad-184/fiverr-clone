@@ -6,22 +6,16 @@ import StarIcon from "@mui/icons-material/Star";
 import { headerBackground } from "../../../constants/home";
 
 const HeaderBg = () => {
-  const [activeBg, setActiveBg] = useState(4);
+  const [activeBg, setActiveBg] = useState(3);
   const theme = useTheme();
   const bg_length = headerBackground.length;
 
   useEffect(() => {
     let timer;
-
-    const changeBg = () => {
-      timer = setTimeout(() => {
-        setActiveBg((activeBg + 1) % bg_length);
-      }, 10000);
-    };
-
-    changeBg();
-
-    () => {
+    timer = setTimeout(() => {
+      setActiveBg((activeBg + 1) % bg_length);
+    }, 10000);
+    return () => {
       clearTimeout(timer);
     };
   }, [activeBg, bg_length]);
@@ -35,6 +29,7 @@ const HeaderBg = () => {
       right="0"
       bottom="0"
       backgroundColor="#0a4226"
+      zIndex="1"
       display={{
         xs: "none",
         sm: "none",
@@ -97,7 +92,7 @@ const HeaderBg = () => {
             />
             <Box display="flex" flexDirection="column">
               <Box display="flex" justifyContent="space-between">
-                <Typography variant="caption" color="white" fontWeight="bold">
+                <Typography variant="caption" color="white">
                   {item.name}
                 </Typography>
                 <Box display="flex" alignItems="center">

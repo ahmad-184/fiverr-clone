@@ -60,3 +60,10 @@ export const headerBackground = [
     },
   },
 ];
+
+export const headerPopularCat = [
+  "Website Design",
+  "WordPress",
+  "Logo Design",
+  "AI Services",
+];

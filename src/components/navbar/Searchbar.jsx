@@ -21,7 +21,7 @@ const Searchbar = ({ activeOnScroll }) => {
           lg: "flex",
           xl: "flex",
         },
-        visibility: activeOnScroll ? "1" : "0",
+        visibility: activeOnScroll ? "visible" : "hidden",
         opacity: activeOnScroll ? "1" : "0",
         transition: "opacity .2s ease",
         flexGrow: "1",
@@ -43,6 +43,7 @@ const Searchbar = ({ activeOnScroll }) => {
           placeholder={
             screen_md ? "Find Services" : "What service are looking for today"
           }
+          type="search"
           sx={{
             fontSize: "16px",
             color: "black",

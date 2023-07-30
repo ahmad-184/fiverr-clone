@@ -9,6 +9,13 @@ const DrawerCom = ({ drawerOpen, handleOpenCloseDrawer }) => {
       open={drawerOpen}
       onClose={handleOpenCloseDrawer}
       sx={{
+        display: {
+          xs: "block",
+          sm: "block",
+          md: "block",
+          lg: "none",
+          xl: "none",
+        },
         "& .MuiDrawer-paper": {
           width: "272px",
           boxShadow: "none",
