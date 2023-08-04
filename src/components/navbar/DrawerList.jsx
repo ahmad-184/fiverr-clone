@@ -9,18 +9,25 @@ import LanguageIcon from "@mui/icons-material/LanguageOutlined";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
-import { categories, exploreLinks, languages } from "../../constants/navbar";
+import {
+  categories,
+  exploreLinks,
+  languages,
+  businessSolutions,
+} from "../../constants/navbar";
 import { Box, Divider, Typography } from "@mui/material";
 
 export default function DrawerList() {
   const [categoryListOpen, setCategoryListOpen] = useState(false);
   const [exploreListOpen, setExploreListOpen] = useState(false);
   const [languagesListOpen, setLanguagesListOpen] = useState(false);
+  const [businessSolutionsOpen, setBusinessSolutionsOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState(0);
 
-  console.log(selectedLang);
   const handleOpenCategoryList = () => setCategoryListOpen((prev) => !prev);
   const handleOpenExploreList = () => setExploreListOpen((prev) => !prev);
+  const handleOpenBusinessSolutions = () =>
+    setBusinessSolutionsOpen((prev) => !prev);
   const handleOpenLanguagesList = () => setLanguagesListOpen((prev) => !prev);
 
   const handleChangeLanguage = (i) => setSelectedLang(i);
@@ -32,9 +39,11 @@ export default function DrawerList() {
           paddingLeft: "0 ",
           backgroundColor: "transparent !important",
           transition: "0.2s all ease-in-out",
-          color: "grey.600",
-          "&:hover": { color: "grey.900" },
+          color: "grey.700",
           paddingY: "4.5px",
+          "& .css-i5j5ye-MuiTypography-root": {
+            fontWeight: "medium",
+          },
         },
       }}
     >
@@ -83,6 +92,35 @@ export default function DrawerList() {
           ))}
         </Collapse>
 
+        <ListItemButton disableRipple onClick={handleOpenBusinessSolutions}>
+          <ListItemText
+            primary="Business solutions"
+            sx={{
+              "& .css-i5j5ye-MuiTypography-root": {
+                fontWeight: "bold !important",
+                color: "grey.800",
+              },
+            }}
+          />
+          {businessSolutionsOpen ? <ExpandLess /> : <ExpandMore />}
+        </ListItemButton>
+        <Collapse in={businessSolutionsOpen} timeout="auto" unmountOnExit>
+          {businessSolutions.map((item, index) => (
+            <List component="div" disablePadding key={index}>
+              <ListItemButton
+                disableRipple
+                sx={{
+                  pl: `16px !important`,
+                  paddingY: "5px",
+                  textTransform: "capitalize",
+                }}
+              >
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </List>
+          ))}
+        </Collapse>
+
         <ListItemButton disableRipple>
           <ListItemText
             primary="Fiverr Business"
@@ -110,7 +148,7 @@ export default function DrawerList() {
           <ListItemText
             primary={
               <Box display="flex" gap={1} alignItems="center">
-                <Typography variant="body1">
+                <Typography variant="body1" fontWeight="medium">
                   {languages[selectedLang]}
                 </Typography>
                 <LanguageIcon
@@ -118,7 +156,6 @@ export default function DrawerList() {
                     color: "grey.500",
                     fontSize: "18px",
                     position: "relative",
-                    top: 1,
                   }}
                 />
               </Box>
@@ -164,14 +201,15 @@ export default function DrawerList() {
               <Box display="flex" alignItems="center">
                 <AttachMoneyRoundedIcon
                   sx={{
-                    color: "grey.500",
+                    color: "grey.600",
                     fontSize: "19px",
                     position: "relative",
-                    top: 1,
                     left: -4.5,
                   }}
                 />
-                <Typography variant="body1">USD</Typography>
+                <Typography variant="body1" fontWeight="medium">
+                  USD
+                </Typography>
               </Box>
             }
           />

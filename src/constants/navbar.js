@@ -1,10 +1,4 @@
-export const navbarLinks = [
-  "Fiverr Business",
-  "Explore",
-  "English",
-  "Become a Seller",
-  "Sign In",
-];
+export const navbarLinks = ["Explore", "English", "Become a Seller", "Sign In"];
 
 export const categories = [
   "Graphics & Design",
@@ -27,6 +21,13 @@ export const exploreLinks = [
   "Podcast",
   "Blog",
   "Fiverr Workspace",
+];
+
+export const businessSolutions = [
+  "fiverr pro",
+  "fiverr certified",
+  "fiverr enterprise",
+  "contact sales",
 ];
 
 export const languages = [

@@ -3,6 +3,8 @@ import { Box, useTheme } from "@mui/material";
 import HeaderBg from "./HeaderBg";
 import HeaderContent from "./HeaderContent";
 
+import Container from "../../../containers/Container";
+
 const Header = () => {
   const theme = useTheme();
 
@@ -12,14 +14,15 @@ const Header = () => {
       position="relative"
       sx={{
         minHeight: "300px",
-        px: "1.8rem",
         [theme.breakpoints.up("md")]: {
           height: "680px",
         },
       }}
     >
-      <HeaderBg />
-      <HeaderContent />
+      <Container>
+        <HeaderBg />
+        <HeaderContent />
+      </Container>
     </Box>
   );
 };

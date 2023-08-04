@@ -3,22 +3,22 @@ import { useState, useEffect } from "react";
 import { Box, Typography, Avatar, useTheme } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 
-import { headerBackground } from "../../../constants/home";
+import { headerBackgroundData } from "../../../constants/home";
 
 const HeaderBg = () => {
   const [activeBg, setActiveBg] = useState(3);
   const theme = useTheme();
-  const bg_length = headerBackground.length;
+  const bg_length = headerBackgroundData.length;
 
-  useEffect(() => {
-    let timer;
-    timer = setTimeout(() => {
-      setActiveBg((activeBg + 1) % bg_length);
-    }, 10000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [activeBg, bg_length]);
+  // useEffect(() => {
+  //   let timer;
+  //   timer = setTimeout(() => {
+  //     setActiveBg((activeBg + 1) % bg_length);
+  //   }, 7000);
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [activeBg, bg_length]);
 
   return (
     <Box
@@ -41,7 +41,7 @@ const HeaderBg = () => {
         userSelect: "none",
       }}
     >
-      {headerBackground.map((item, index) => (
+      {headerBackgroundData.map((item, index) => (
         <Box
           width="100%"
           height="100%"
@@ -64,7 +64,7 @@ const HeaderBg = () => {
             alignItems: "end",
             [theme.breakpoints.up("md")]: {
               backgroundImage: `url(${item.images._900})`,
-              backgroundPosition: "100% 100%",
+              backgroundPosition: "65% 100%",
             },
             [theme.breakpoints.up("lg")]: {
               backgroundImage: `url(${item.images.full})`,
@@ -92,17 +92,22 @@ const HeaderBg = () => {
             />
             <Box display="flex" flexDirection="column">
               <Box display="flex" justifyContent="space-between">
-                <Typography variant="caption" color="white">
+                <Typography variant="caption" fontWeight="medium" color="white">
                   {item.name}
                 </Typography>
-                <Box display="flex" alignItems="center">
+                <Box display="flex" gap={0.1} alignItems="center">
                   <Typography variant="caption" color="white" fontWeight="bold">
                     {item.star}
                   </Typography>
                   <StarIcon sx={{ fontSize: "13px", color: "white" }} />
                 </Box>
               </Box>
-              <Typography variant="body1" color="white" lineHeight="1.1">
+              <Typography
+                variant="body1"
+                fontWeight="bold"
+                color="white"
+                lineHeight="1.1"
+              >
                 {item.job}
               </Typography>
             </Box>

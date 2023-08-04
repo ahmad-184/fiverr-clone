@@ -1,5 +1,8 @@
 import { Box, Button, Typography } from "@mui/material";
+
 import { navbarLinks } from "../../constants/navbar";
+
+import NavbarButtonMenu from "./NavbarButtonMenu";
 
 const NavbarButtons = ({ activeOnScroll }) => {
   return (
@@ -16,18 +19,13 @@ const NavbarButtons = ({ activeOnScroll }) => {
         xl: "flex",
       }}
     >
+      <NavbarButtonMenu activeOnScroll={activeOnScroll} />
       {navbarLinks.map((item, index) => (
         <Typography
           variant="body1"
           fontWeight="bold"
           key={index}
-          color={
-            activeOnScroll && index === 0
-              ? "#1e1692"
-              : activeOnScroll
-              ? "#62646a"
-              : "#fff"
-          }
+          color={activeOnScroll ? "#62646a" : "#fff"}
           sx={{
             cursor: "pointer",
             display: {

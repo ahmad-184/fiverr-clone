@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
-import { headerPopularCat } from "../../../constants/home";
+import { headerPopularCatData } from "../../../constants/home";
 
 const HeaderContent = () => {
   const theme = useTheme();
@@ -28,7 +28,7 @@ const HeaderContent = () => {
       sx={{
         [theme.breakpoints.down("md")]: {
           justifyContent: "center",
-          padding: "8rem 0 3rem 0",
+          padding: "11rem 0 3rem 0",
         },
       }}
     >
@@ -109,8 +109,8 @@ const HeaderContent = () => {
                   px: 2,
                   flexGrow: "1",
                   backgroundColor: "white",
-                  borderRadius: `2px 0 0 2px`,
-                  "& ::placeholder": { fontWeight: "bold" },
+                  fontWeight: "medium",
+                  borderRadius: `4px 0 0 4px`,
                   [theme.breakpoints.down("md")]: {
                     width: "100%",
                     borderRadius: "4px",
@@ -121,6 +121,7 @@ const HeaderContent = () => {
                 variant="contained"
                 type="submit"
                 color="primary"
+                aria-label="search button"
                 sx={{
                   alignItems: "center",
                   justifyContent: "center",
@@ -154,7 +155,7 @@ const HeaderContent = () => {
             Popular:{" "}
           </Typography>
           <Box display="flex" flexDirection="row" gap={2}>
-            {headerPopularCat.map((item, index) => (
+            {headerPopularCatData.map((item, index) => (
               <Chip
                 key={index}
                 label={item}

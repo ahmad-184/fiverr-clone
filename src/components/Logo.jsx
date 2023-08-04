@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Logo = ({ color }) => {
   return (
-    <Link to="/" style={{ cursor: "pointer" }}>
+    <Link to aria-label="go to main page" style={{ cursor: "pointer" }}>
       <svg
         width="89"
         height="27"

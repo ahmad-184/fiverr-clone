@@ -1,7 +1,9 @@
+import { Suspense, lazy } from "react";
 import { Outlet } from "react-router-dom";
 
-import { Navbar } from "../components";
 import { Box } from "@mui/material";
+
+import { Navbar } from "../components";
 
 const MainLayout = () => {
   return (

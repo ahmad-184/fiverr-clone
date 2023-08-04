@@ -9,7 +9,7 @@ import {
 
 import MenuIcon from "@mui/icons-material/MenuRounded";
 
-import Logo from "./Logo";
+import Logo from "../Logo";
 
 import Searchbar from "./Searchbar";
 import Drawer from "./Drawer";
