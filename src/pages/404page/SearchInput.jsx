@@ -37,11 +37,12 @@ const SearchInput = () => {
           variant="contained"
           color="primary"
           type="submit"
+          aria-label="search button"
           sx={{
             alignItems: "center",
             justifyContent: "center",
             borderRadius: "0",
-            minWidth: "45px",
+            minWidth: "50px",
             padding: "0",
           }}
         >

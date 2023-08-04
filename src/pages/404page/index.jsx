@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Box,
   Chip,
@@ -13,8 +14,13 @@ import SearchInput from "./SearchInput";
 import { headerPopularCatData } from "../../constants/home";
 import { Helmet } from "react-helmet-async";
 
-const image =
-  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691157758/images/404_20page_20-_201_hrxrdr.png";
+const bgImages = [
+  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691157758/images/404_20page_20-_201_hrxrdr.png",
+  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691192277/images/404_20page_20-_202_elkeak.png",
+  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691192305/images/404_20page_20-_204_fuolzk.svg",
+  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691192338/images/404_20page_20-_205_otcfgd.svg",
+  "https://res.cloudinary.com/dnlnbcbt0/image/upload/f_auto,q_auto/v1691192394/images/404_20page_20-_203_f8ghvk.png",
+];
 
 const NotFoundPage = () => {
   const theme = useTheme();
@@ -38,7 +44,7 @@ const NotFoundPage = () => {
             screen_up_900
               ? "linear-gradient(90deg,rgba(0,0,0,.81) 17.97%,rgba(0,0,0,.31) 57.6%,transparent 77.6%)"
               : "linear-gradient(180deg,#000 .21%,rgba(0,0,0,.8) 34.96%,rgba(0,0,0,.32) 78.47%,rgba(0,0,0,.25) 85.43%,rgba(0,0,0,.75) 99.97%)"
-          },url(${image})`,
+          },url(${bgImages[Math.floor(Math.random() * bgImages.length)]})`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundColor: "#000",
