@@ -21,11 +21,13 @@ const NavbarCategoryTabs = ({ activeOnScroll }) => {
               xl: "flex",
             }
           : "none",
+        justifyContent: "center",
       }}
     >
       <Grow in={activeOnScroll} {...(activeOnScroll ? { timeout: 200 } : {})}>
         <Box
           sx={{
+            dipslay: "flex",
             width: "100%",
             justifyContent: "center",
             visibility: activeOnScroll ? "visible" : "none",
@@ -46,6 +48,7 @@ const NavbarCategoryTabs = ({ activeOnScroll }) => {
               position: "relative",
               maxWidth: "1350px",
               justifyContent: "center",
+              mx: "auto",
               "& .Mui-selected": { color: "#62646a !important" },
               "& .MuiTabs-indicator": { display: "none" },
               "& .MuiTabScrollButton-root": {
@@ -76,6 +79,7 @@ const NavbarCategoryTabs = ({ activeOnScroll }) => {
                 sx={{
                   ...(index === 0 && { paddingLeft: "0px" }),
                   ...(index === categories.length - 1 && {
+                    padding: "12px 12px",
                     paddingRight: "0px",
                   }),
                   color: "#62646a",
