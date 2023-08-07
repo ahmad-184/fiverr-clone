@@ -1,9 +1,12 @@
+import { useState, lazy, Suspense } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 
 import Container from "../../../containers/Container";
+
+const VideoModal = lazy(() => import("../../../components/VideoModal"));
 
 const data = [
   {
@@ -47,17 +50,26 @@ const imageSourceData = [
   },
 ];
 
+const videoSellingProposition =
+  "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691267251/videos/vmvv3czyk2ifedefkau7_ktjjry.mp4";
+
 const SellingProposition = () => {
+  const [openModal, setOpenModal] = useState(false);
   const theme = useTheme();
+
+  const handleOpenModal = () => setOpenModal((prev) => !prev);
+  const handleCloseModal = () => setOpenModal((prev) => !prev);
 
   return (
     <Container
-      my={12}
       py={5}
       backgroundColor="#f1fdf7"
       display="flex"
       justifyContent="center"
       sx={{
+        [theme.breakpoints.down("md")]: {
+          my: 2,
+        },
         [theme.breakpoints.up("md")]: {
           py: 7,
         },
@@ -165,6 +177,7 @@ const SellingProposition = () => {
                 height: "100%",
               },
             }}
+            onClick={handleOpenModal}
           >
             <Box
               position="absolute"
@@ -198,6 +211,13 @@ const SellingProposition = () => {
           </Box>
         </Grid>
       </Grid>
+      <Suspense>
+        <VideoModal
+          video={videoSellingProposition}
+          open={openModal}
+          handleClose={handleCloseModal}
+        />
+      </Suspense>
     </Container>
   );
 };
