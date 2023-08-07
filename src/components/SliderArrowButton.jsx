@@ -1,6 +1,9 @@
 import { Box, IconButton, useTheme } from "@mui/material";
 
-const SliderArrowButton = ({ Icon, dir, swiper }) => {
+import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+
+const SliderArrowButton = ({ dir, swiper }) => {
   const theme = useTheme();
 
   return (
@@ -30,7 +33,15 @@ const SliderArrowButton = ({ Icon, dir, swiper }) => {
             : swiper.current.slideNext()
         }
       >
-        <Icon sx={{ color: "black", fontSize: "30px" }} />
+        {dir === "left" ? (
+          <KeyboardArrowLeftRoundedIcon
+            sx={{ color: "black", fontSize: "30px" }}
+          />
+        ) : (
+          <KeyboardArrowRightRoundedIcon
+            sx={{ color: "black", fontSize: "30px" }}
+          />
+        )}
       </IconButton>
     </Box>
   );

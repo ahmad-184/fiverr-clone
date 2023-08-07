@@ -1,12 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 
-import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
-import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
-
-import SliderArrowButton from "./SliderArrowButton";
+import Slider from "../../../components/Slider";
 
 import { popularServicesData } from "../../../constants/home";
 
@@ -14,7 +11,6 @@ import "swiper/css";
 
 const Slides = () => {
   const [slidesPerView, setSlidesPerView] = useState(1);
-  const swiperRef = useRef(null);
 
   const screen_down_600 = useMediaQuery("(max-width: 600px)");
   const screen_down_800 = useMediaQuery("(max-width: 800px)");
@@ -45,22 +41,7 @@ const Slides = () => {
           position: "relative",
         }}
       >
-        <SliderArrowButton
-          Icon={KeyboardArrowLeftRoundedIcon}
-          dir="left"
-          swiper={swiperRef}
-        />
-        <SliderArrowButton
-          Icon={KeyboardArrowRightRoundedIcon}
-          dir="right"
-          swiper={swiperRef}
-        />
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={slidesPerView}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-          loop={true}
-        >
+        <Slider slidesPerView={slidesPerView}>
           {popularServicesData.map((item, index) => (
             <SwiperSlide key={index} draggable={true}>
               <Link to="/" style={{ textDecoration: " none" }}>
@@ -71,7 +52,11 @@ const Slides = () => {
                   height="315px"
                   overflow="hidden"
                   sx={{
+                    transition: ".3s opacity ease",
                     borderRadius: 1,
+                    "&:hover": {
+                      opacity: ".8",
+                    },
                   }}
                 >
                   <Box position="relative" zIndex="1">
@@ -133,7 +118,7 @@ const Slides = () => {
               </Link>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Slider>
       </Box>
     </>
   );
