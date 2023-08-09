@@ -3,7 +3,7 @@ import { Box, IconButton, useTheme } from "@mui/material";
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
-const SliderArrowButton = ({ dir, swiper }) => {
+const SliderArrowButton = ({ dir, swiper, buttonsPosition }) => {
   const theme = useTheme();
 
   return (
@@ -11,7 +11,7 @@ const SliderArrowButton = ({ dir, swiper }) => {
       sx={{
         zIndex: "2",
         position: "absolute",
-        top: "50%",
+        top: buttonsPosition || "50%",
         transform: "translateY(-50%)",
         ...(dir === "left"
           ? { left: "-21px" }
@@ -25,7 +25,7 @@ const SliderArrowButton = ({ dir, swiper }) => {
         sx={{
           backgroundColor: "white !important",
           p: 1.2,
-          boxShadow: theme.shadows[1],
+          boxShadow: theme.shadows[3],
         }}
         onClick={() =>
           dir === "left"

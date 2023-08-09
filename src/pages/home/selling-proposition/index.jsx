@@ -2,9 +2,9 @@ import { useState, lazy, Suspense } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
-import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 
 import Container from "../../../containers/Container";
+import ImagePoster from "../../../components/ImagePoster";
 
 const VideoModal = lazy(() => import("../../../components/VideoModal"));
 
@@ -164,51 +164,11 @@ const SellingProposition = () => {
           </Box>
         </Grid>
         <Grid xs={12} sm={12} md={6} lg={6} xl={6}>
-          <Box
-            width="100%"
-            position="relative"
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-              },
-              "& img": {
-                width: "100%",
-                objectFit: "cover",
-                height: "100%",
-              },
-            }}
-            onClick={handleOpenModal}
-          >
-            <Box
-              position="absolute"
-              top="50%"
-              left="50%"
-              p={1.3}
-              lineHeight={0}
-              backgroundColor="#212121ba"
-              borderRadius="50%"
-              sx={{
-                transform: "translate(-50%,-50%)",
-              }}
-            >
-              <PlayArrowRoundedIcon sx={{ color: "#fff", fontSize: "60px" }} />
-            </Box>
-            <picture>
-              {imageSourceData.map((item, index) => (
-                <source
-                  media={`(min-width:${item.width})`}
-                  srcSet={item.url}
-                  key={index}
-                />
-              ))}
-
-              <img
-                alt="Video teaser image"
-                src="https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_700,dpr_1.0/v1691273366/images/selling-proposition-still-1400-x1_eql3ei.png"
-                loading="auto"
-              />
-            </picture>
-          </Box>
+          <ImagePoster
+            image="https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_700,dpr_1.0/v1691273366/images/selling-proposition-still-1400-x1_eql3ei.png"
+            imageSourceData={imageSourceData}
+            handleOpenModal={handleCloseModal}
+          />
         </Grid>
       </Grid>
       <Suspense>

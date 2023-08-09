@@ -3,16 +3,29 @@ import { Swiper } from "swiper/react";
 
 import SliderArrowButton from "./SliderArrowButton";
 
-const Slider = ({ slidesPerView, children }) => {
+const Slider = ({
+  slidesPerView,
+  spaceBetweenSlide,
+  children,
+  buttonsPosition,
+}) => {
   const swiperRef = useRef(null);
 
   return (
     <div>
-      <SliderArrowButton dir="left" swiper={swiperRef} />
-      <SliderArrowButton dir="right" swiper={swiperRef} />
+      <SliderArrowButton
+        buttonsPosition={buttonsPosition}
+        dir="left"
+        swiper={swiperRef}
+      />
+      <SliderArrowButton
+        buttonsPosition={buttonsPosition}
+        dir="right"
+        swiper={swiperRef}
+      />
       <Swiper
-        spaceBetween={30}
-        slidesPerView={slidesPerView}
+        spaceBetween={spaceBetweenSlide || 30}
+        slidesPerView={slidesPerView || 1}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         loop={true}
       >

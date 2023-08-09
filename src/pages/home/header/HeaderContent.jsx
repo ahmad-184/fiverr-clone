@@ -56,19 +56,24 @@ const HeaderContent = () => {
             color="white"
             fontWeight="bold"
             sx={{
-              [theme.breakpoints.down("lg")]: {
+              [theme.breakpoints.up("xs")]: {
+                fontSize: "32px",
+              },
+              [theme.breakpoints.up("sm")]: {
                 fontSize: "40px",
               },
-              [theme.breakpoints.down("sm")]: {
-                fontSize: "32px",
+              [theme.breakpoints.up("lg")]: {
+                fontSize: "48px",
               },
             }}
           >
             Find the right{" "}
             <span
               style={{
-                fontFamily: "Domain-display",
+                fontFamily: "Domaine-Display",
                 fontStyle: "italic",
+                fontWeight: "500",
+                letterSpacing: ".8px",
               }}
             >
               freelance

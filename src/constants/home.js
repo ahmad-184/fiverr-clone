@@ -274,3 +274,177 @@ export const popularServicesData = [
     },
   },
 ];
+
+export const categories = [
+  {
+    name: "Graphics & Design",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691426962/categories/graphics-design.91dfe44_o98kyo.svg",
+  },
+  {
+    name: "Digital Marketing",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691426973/categories/online-marketing.a3e9794_l83ugc.svg",
+  },
+  {
+    name: "Writing & Translation",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691426982/categories/writing-translation.a787f2f_fuzc6m.svg",
+  },
+  {
+    name: "Video & Animation",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691426991/categories/video-animation.1356999_npvwzg.svg",
+  },
+  {
+    name: "Music & Audio",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427000/categories/music-audio.ede4c90_wimo94.svg",
+  },
+  {
+    name: "Programming & Tech",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427012/categories/programming.6ee5a90_zyq9iy.svg",
+  },
+  {
+    name: "Business",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427021/categories/business.fabc3a7_ms2wlo.svg",
+  },
+  {
+    name: "Lifestyle",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427032/categories/lifestyle.112b348_avp8v8.svg",
+  },
+  {
+    name: "Data",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427041/categories/data.855fe95_gkstjl.svg",
+  },
+  {
+    name: "Photography",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691427053/categories/photography.0cf5a3f_kjh1kg.svg",
+  },
+];
+
+export const testimonialsData = [
+  {
+    text: "Tim and Dan Joo, Co-Founders",
+    companyLogo:
+      "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691524552/testomnial-logos/haerfest-logo-x2.934ab63_vb9lsi.png",
+    quote:
+      "When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does.",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg",
+    image_sources: [
+      {
+        width: "1160px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_2.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 2x",
+      },
+      {
+        width: "900px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 2x",
+      },
+      {
+        width: "600px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_2.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 2x",
+      },
+      {
+        width: "361px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_2.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 2x",
+      },
+      {
+        width: "360px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_1.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_2.0/v1691524714/images/testimonial-video-still-haerfest_kmhwz1.jpg 2x",
+      },
+    ],
+    video:
+      "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691525853/videos/bsncmkwya3nectkensun_dpvhqr.mp4",
+  },
+  {
+    text: "Kay Kim, Co-Founder",
+    companyLogo:
+      "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691524568/testomnial-logos/rooted-logo-x2.7da3bc9_e1jrtk.png",
+    quote:
+      "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working.",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg",
+    image_sources: [
+      {
+        width: "1160px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_2.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 2x",
+      },
+      {
+        width: "900px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 2x",
+      },
+      {
+        width: "600px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_2.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 2x",
+      },
+      {
+        width: "361px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_2.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 2x",
+      },
+      {
+        width: "360px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_1.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_2.0/v1691524714/images/testimonial-video-still-rooted_bqbyt4.jpg 2x",
+      },
+    ],
+    video:
+      "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691526025/videos/yja2ld5fnolhsixj3xxw_mkucew.mp4",
+  },
+  {
+    text: "Caitlin Tormey, Chief Commercial Officer",
+    companyLogo:
+      "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691524587/testomnial-logos/naadam-logo-x2.a79031d_w7f3hs.png",
+    quote:
+      "We've used Fiverr for Shopify web development, graphic design, and backend web development. Working with Fiverr makes my job a little easier every day.",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg",
+    image_sources: [
+      {
+        width: "1160px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_2.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 2x",
+      },
+      {
+        width: "900px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 2x",
+      },
+      {
+        width: "600px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_2.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 2x",
+      },
+      {
+        width: "361px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_2.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 2x",
+      },
+      {
+        width: "360px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_1.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_2.0/v1691524714/images/testimonial-video-still-naadam_cpkw8t.jpg 2x",
+      },
+    ],
+    video:
+      "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691526466/videos/plfa6gdjihpdvr10rchl_s9aknd.mp4",
+  },
+  {
+    text: "Brighid Gannon (DNP, PMHNP-BC), Co-Founder",
+    companyLogo:
+      "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691524594/testomnial-logos/lavender-logo-x2.3fff9e7_nahxm0.png",
+    quote:
+      "We used Fiverr for SEO, our logo, website, copy, animated videos — literally everything. It was like working with a human right next to you versus being across the world.",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg",
+    image_sources: [
+      {
+        width: "1160px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_560,dpr_2.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 2x",
+      },
+      {
+        width: "900px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 2x",
+      },
+      {
+        width: "600px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_820,dpr_2.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 2x",
+      },
+      {
+        width: "361px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_480,dpr_2.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 2x",
+      },
+      {
+        width: "360px",
+        url: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_1.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_360,dpr_2.0/v1691524714/images/testimonial-video-still-lavender_uejlq9.jpg 2x",
+      },
+    ],
+    video:
+      "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691526403/videos/rb8jtakrisiz0xtsffwi_h0atd1.mp4",
+  },
+];

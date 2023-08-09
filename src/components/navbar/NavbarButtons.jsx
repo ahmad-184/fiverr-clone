@@ -31,7 +31,7 @@ const NavbarButtons = ({ activeOnScroll }) => {
             display: {
               xs: "none",
               sm: index === 4 ? "block" : "none",
-              md: index === 2 ? "none" : "block",
+              md: index === 1 ? "none" : "block",
               lg: "block",
               xl: "block",
             },

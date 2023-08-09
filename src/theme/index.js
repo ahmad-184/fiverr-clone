@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 
 const themeSettings = {
   typography: {
-    fontFamily: "macan,Domain-display,sans-serif",
+    fontFamily: "macan,Domaine-Display,sans-serif",
   },
   palette: {
     primary: {

@@ -34,11 +34,59 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Domain-display";
   src: url("DomaineDisplay-Bold.woff2") format("woff2"),
     url("DomaineDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+} */
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Domaine Display Narrow Regular"),
+    url("DomaineDispNar-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Domaine Display Narrow Regular Italic"),
+    url("DomaineDispNar-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Domaine Display Narrow Medium"),
+    url("DomaineDispNar-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Domaine Display Narrow Medium Italic"),
+    url("DomaineDispNar-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Domaine Display Narrow Bold"),
+    url("DomaineDispNar-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Domaine-Display";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Domaine Display Narrow Bold Italic"),
+    url("DomaineDispNar-BoldItalic.woff") format("woff");
 }
