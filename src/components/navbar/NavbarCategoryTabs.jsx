@@ -6,11 +6,10 @@ import Container from "../../containers/Container";
 
 const NavbarCategoryTabs = ({ activeOnScroll }) => {
   const [activeTab, setActiveTab] = useState(0);
-
   return (
     <Container
       backgroundColor="background.paper"
-      borderBottom="2px solid #dbd7d7"
+      borderBottom="2px solid #e4e5e7"
       sx={{
         display: activeOnScroll
           ? {

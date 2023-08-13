@@ -78,7 +78,7 @@ const NavbarButtonMenu = ({ activeOnScroll }) => {
           horizontal: "right",
         }}
         sx={{
-          "& .css-1p9bt8o-MuiButtonBase-root-MuiMenuItem-root": {
+          "& .MuiMenuItem-root": {
             whiteSpace: "unset",
             width: "360px",
           },

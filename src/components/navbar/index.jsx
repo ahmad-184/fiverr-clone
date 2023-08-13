@@ -42,12 +42,13 @@ const Navbar = () => {
           transition: "background-color 0.5s ease",
           backgroundColor: scrollDown_0 ? "#fff" : "transparent",
           borderBottom: is_screen_sm
-            ? "1px solid #dbd7d7"
+            ? "1px solid #e4e5e7"
             : scrollDown_0
-            ? "1px solid #dbd7d7"
+            ? "1px solid #e4e5e7"
             : "none",
           [theme.breakpoints.down("sm")]: {
             backgroundColor: "#fff",
+            borderBottom: "none",
           },
         }}
       >

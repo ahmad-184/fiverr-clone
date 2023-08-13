@@ -7,6 +7,7 @@ import SellingProposition from "./selling-proposition";
 import Categories from "./categories";
 import FibBanner from "./fibBanner";
 import Testimonials from "./testimonials";
+import LogoMaker from "./logo-maker";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Categories />
       <FibBanner />
       <Testimonials />
+      <LogoMaker />
     </Box>
   );
 };
