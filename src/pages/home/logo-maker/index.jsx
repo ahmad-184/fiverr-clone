@@ -57,9 +57,11 @@ const LogoMaker = () => {
         mx="auto"
         backgroundColor="#446ee7"
         position="relative"
-        borderRadius={1.5}
         sx={{
           overflow: "hidden",
+          [theme.breakpoints.up("sm")]: {
+            borderRadius: 1.5,
+          },
           [theme.breakpoints.up("md")]: {
             pt: 0,
           },

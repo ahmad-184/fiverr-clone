@@ -4,7 +4,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 
 import Container from "../../../containers/Container";
-import ImagePoster from "../../../components/ImagePoster";
+import { ImagePoster } from "../../../components";
 
 const VideoModal = lazy(() => import("../../../components/VideoModal"));
 

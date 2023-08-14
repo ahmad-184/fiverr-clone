@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { SwiperSlide } from "swiper/react";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 
-import Slider from "../../../components/Slider";
+import { Slider } from "../../../components";
 
 import { popularServicesData } from "../../../constants/home";
 

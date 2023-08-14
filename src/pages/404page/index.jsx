@@ -8,7 +8,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-import Logo from "../../components/Logo";
+import { Logo } from "../../components";
 import SearchInput from "./SearchInput";
 
 import { headerPopularCatData } from "../../constants/home";

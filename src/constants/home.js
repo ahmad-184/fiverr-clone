@@ -448,3 +448,350 @@ export const testimonialsData = [
       "https://res.cloudinary.com/dnlnbcbt0/video/upload/v1691526403/videos/rb8jtakrisiz0xtsffwi_h0atd1.mp4",
   },
 ];
+
+export const madeOnFiverrData = [
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/passionshake_iobql3.jpg",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/passionshake_iobql3.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/passionshake_iobql3.jpg 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/passionshake_iobql3.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/passionshake_iobql3.jpg 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/passionshake_iobql3.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/passionshake_iobql3.jpg 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/passionshake_iobql3.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/passionshake_iobql3.jpg 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979219/users_avatars/74e5ab33-a5fc-40ae-9cee-a91b23e80237_k8ln9o.jpg",
+      service: "Product Photography",
+      seller_name: "passionshake",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/christophbrandl_jc04es.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/christophbrandl_jc04es.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/christophbrandl_jc04es.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/christophbrandl_jc04es.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/christophbrandl_jc04es.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/christophbrandl_jc04es.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/christophbrandl_jc04es.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/christophbrandl_jc04es.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/christophbrandl_jc04es.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979238/users_avatars/6b4a9867-ad06-415f-b307-11177ae30fdd_u13pft.png",
+      service: "Illustration",
+      seller_name: "christophbrandl",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/noneyn_y7ekki.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/noneyn_y7ekki.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/noneyn_y7ekki.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/noneyn_y7ekki.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/noneyn_y7ekki.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/noneyn_y7ekki.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/noneyn_y7ekki.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/noneyn_y7ekki.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/noneyn_y7ekki.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979245/users_avatars/0aaffa8e-01e0-4dcb-b56d-674e9b9c4bf5_griai9.jpg",
+      service: "Portraits & Caricatures",
+      seller_name: "noneyn",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/eveeelin_p9kmai.jpg",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/eveeelin_p9kmai.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/eveeelin_p9kmai.jpg 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/eveeelin_p9kmai.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/eveeelin_p9kmai.jpg 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/eveeelin_p9kmai.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/eveeelin_p9kmai.jpg 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/eveeelin_p9kmai.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/eveeelin_p9kmai.jpg 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979253/users_avatars/f79ede47-da5f-440a-bf23-57ed9ef7d363_opwmij.png",
+      service: "Logo Design",
+      seller_name: "eveeelin",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/lamonastudio-img_vcznjh.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/lamonastudio-img_vcznjh.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/lamonastudio-img_vcznjh.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/lamonastudio-img_vcznjh.png1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/lamonastudio-img_vcznjh.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/lamonastudio-img_vcznjh.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/lamonastudio-img_vcznjh.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/lamonastudio-img_vcznjh.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/lamonastudio-img_vcznjh.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979268/users_avatars/5a706f4e-9f73-4ebc-97ff-9d2ef16bf28c_cvxift.png",
+      service: "Animated GIFs",
+      seller_name: "lamonastudio",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/mijalzagier_ehu8rx.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/mijalzagier_ehu8rx.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/mijalzagier_ehu8rx.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/mijalzagier_ehu8rx.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/mijalzagier_ehu8rx.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/mijalzagier_ehu8rx.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/mijalzagier_ehu8rx.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/mijalzagier_ehu8rx.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/mijalzagier_ehu8rx.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979282/users_avatars/750ccab0-8a64-4c91-b9a4-d10039dbf79c_rfrmqx.jpg",
+      service: "Packaging Design",
+      seller_name: "mijalzagier",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/spickex_bec4ur.jpg",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/spickex_bec4ur.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/spickex_bec4ur.jpg 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/spickex_bec4ur.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/spickex_bec4ur.jpg 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/spickex_bec4ur.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/spickex_bec4ur.jpg 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/spickex_bec4ur.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/spickex_bec4ur.jpg 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979295/users_avatars/fiverr_profile_n3n4qo.jpg",
+      service: "Flyer Design",
+      seller_name: "spickex",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/fernandobengua_ttpl1f.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/fernandobengua_ttpl1f.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/fernandobengua_ttpl1f.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/fernandobengua_ttpl1f.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/fernandobengua_ttpl1f.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/fernandobengua_ttpl1f.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/fernandobengua_ttpl1f.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/fernandobengua_ttpl1f.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/fernandobengua_ttpl1f.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979310/users_avatars/db111eb4-c119-42b4-9a1d-9116601f3d22_tv7sna.jpg",
+      service: "Social Media Design",
+      seller_name: "fernandobengua",
+    },
+  },
+
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/skydesigner_k5jso2.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/skydesigner_k5jso2.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/skydesigner_k5jso2.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/skydesigner_k5jso2.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/skydesigner_k5jso2.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/skydesigner_k5jso2.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/skydesigner_k5jso2.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/skydesigner_k5jso2.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/skydesigner_k5jso2.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979320/users_avatars/2bb8af3c-4cce-42a8-a699-f11177524084_k0zaz5.png",
+      service: "Web & Mobile Design",
+      seller_name: "skydesigner",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/bruno_malagrino_lylpbw.png",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/bruno_malagrino_lylpbw.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/bruno_malagrino_lylpbw.png 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/bruno_malagrino_lylpbw.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/bruno_malagrino_lylpbw.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/bruno_malagrino_lylpbw.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/bruno_malagrino_lylpbw.png 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/bruno_malagrino_lylpbw.png 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/bruno_malagrino_lylpbw.png 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979339/users_avatars/AF1BF970-07CA-454B-8AF1-2F3E06838C8B_rafxtc.jpg",
+      service: "Logo Design",
+      seller_name: "bruno_malagrino",
+    },
+  },
+  {
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/annapietrangeli_lbax4p.jpg",
+    imgSources: [
+      {
+        width: "(min-width: 1060px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_1.0/v1691977050/images/annapietrangeli_lbax4p.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_320,dpr_2.0/v1691977050/images/annapietrangeli_lbax4p.jpg 2x",
+      },
+      {
+        width: "(min-width: 800px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_1.0/v1691977050/images/annapietrangeli_lbax4p.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_300,dpr_2.0/v1691977050/images/annapietrangeli_lbax4p.jpg 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1691977050/images/annapietrangeli_lbax4p.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_400,dpr_2.0/v1691977050/images/annapietrangeli_lbax4p.jpg 2x",
+      },
+      {
+        width: "(max-width: 599px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_1.0/v1691977050/images/annapietrangeli_lbax4p.jpg 1x,https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_550,dpr_2.0/v1691977050/images/annapietrangeli_lbax4p.jpg 2x",
+      },
+    ],
+    user: {
+      avatar:
+        "https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691979354/users_avatars/1d531e54-7607-4bdb-815f-088dbc0fb971_uz0te3.jpg",
+      service: "Book Design",
+      seller_name: "annapietrangeli",
+    },
+  },
+];
+
+("https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691977050/images/");

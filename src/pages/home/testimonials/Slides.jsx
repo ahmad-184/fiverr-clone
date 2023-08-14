@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { lazy, useState } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
-import ImagePoster from "../../../components/ImagePoster";
-import VideoModal from "../../../components/VideoModal";
+import { ImagePoster } from "../../../components";
+
+const VideoModal = lazy(() => import("../../../components/VideoModal"));
 
 const Slides = ({ item }) => {
   const [opneModal, setOpenModal] = useState(false);

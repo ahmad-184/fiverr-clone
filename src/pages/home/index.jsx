@@ -8,6 +8,7 @@ import Categories from "./categories";
 import FibBanner from "./fibBanner";
 import Testimonials from "./testimonials";
 import LogoMaker from "./logo-maker";
+import MadeOnFiverr from "./made-on-fiverr";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <FibBanner />
       <Testimonials />
       <LogoMaker />
+      <MadeOnFiverr />
     </Box>
   );
 };

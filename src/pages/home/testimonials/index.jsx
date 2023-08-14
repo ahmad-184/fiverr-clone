@@ -1,7 +1,7 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { SwiperSlide } from "swiper/react";
 
-import Slider from "../../../components/Slider";
+import { Slider } from "../../../components";
 import Container from "../../../containers/Container";
 import Slides from "./Slides";
 import { testimonialsData } from "../../../constants/home";
