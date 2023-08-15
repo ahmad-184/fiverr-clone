@@ -41,7 +41,7 @@ export default function DrawerList() {
           transition: "0.2s all ease-in-out",
           color: "grey.700",
           paddingY: "4.5px",
-          "& .css-i5j5ye-MuiTypography-root": {
+          "& .MuiListItemText-primary": {
             fontWeight: "medium",
           },
         },

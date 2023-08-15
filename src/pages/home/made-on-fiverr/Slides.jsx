@@ -27,7 +27,7 @@ const Slides = ({ item }) => {
           {imgSources.map((source, index) => (
             <source media={source.width} srcSet={source.srcset} key={index} />
           ))}
-          <img src={img} alt={user.service} />
+          <img src={img} alt={user.service} loading="lazy" />
         </picture>
       </Box>
       <Box
@@ -66,8 +66,8 @@ const Slides = ({ item }) => {
           </Typography>
           <Typography
             variant="body1"
-            fontWeight="bold"
-            color="grey.500"
+            fontWeight="medium"
+            color="#95979d"
             noWrap
             sx={{
               [theme.breakpoints.up("sm")]: {

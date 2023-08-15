@@ -794,4 +794,101 @@ export const madeOnFiverrData = [
   },
 ];
 
-("https://res.cloudinary.com/dnlnbcbt0/image/upload/v1691977050/images/");
+export const fiverrGuidesData = [
+  {
+    title: "Start an online business and work from home",
+    desc: "A complete guide to starting a small business online",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png",
+    img_sources: [
+      {
+        width: "(min-width: 1160px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 2x",
+      },
+      {
+        width: "(min-width: 900px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_2.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_2.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 2x",
+      },
+      {
+        width: "(min-width: 361px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_2.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 2x",
+      },
+      {
+        width: "(max-width: 360px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_1.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_2.0/v1692074289/images/guide-start-online-business-552-x2_sy4uvg.png 2x",
+      },
+    ],
+  },
+  {
+    title: "Digital marketing made easy",
+    desc: "A practical guide to understand what is digital marketing",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png",
+    img_sources: [
+      {
+        width: "(min-width: 1160px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 2x",
+      },
+      {
+        width: "(min-width: 900px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_2.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_2.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 2x",
+      },
+      {
+        width: "(min-width: 361px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_2.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 2x",
+      },
+      {
+        width: "(max-width: 360px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_1.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_2.0/v1692074289/images/guide-digital-marketing-552-x2_tvk5wu.png 2x",
+      },
+    ],
+  },
+  {
+    title: "Create a logo for your business",
+    desc: "A step-by-step guide to create a memorable business logo",
+    img: "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png",
+    img_sources: [
+      {
+        width: "(min-width: 1160px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_450,dpr_2.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 2x",
+      },
+      {
+        width: "(min-width: 900px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_350,dpr_2.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 2x",
+      },
+      {
+        width: "(min-width: 600px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_410,dpr_2.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 2x",
+      },
+      {
+        width: "(min-width: 361px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_552,dpr_2.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 2x",
+      },
+      {
+        width: "(max-width: 360px)",
+        srcset:
+          "https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_1.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 1x, https://res.cloudinary.com/dnlnbcbt0/image/upload/q_auto,f_auto,w_312,dpr_2.0/v1692074289/images/guide-create-a-logo-552-x2_ll8vem.png 2x",
+      },
+    ],
+  },
+];

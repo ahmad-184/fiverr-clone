@@ -79,7 +79,9 @@ const MadeOnFiverr = () => {
             }}
           >
             See more
-            <KeyboardArrowRightRoundedIcon />
+            <KeyboardArrowRightRoundedIcon
+              sx={{ position: "relative", top: "1px", fontSize: "20px" }}
+            />
           </Typography>
         </Box>
         <Box
@@ -124,7 +126,9 @@ const MadeOnFiverr = () => {
             }}
           >
             See more
-            <KeyboardArrowRightRoundedIcon />
+            <KeyboardArrowRightRoundedIcon
+              sx={{ position: "relative", top: "1px", fontSize: "20px" }}
+            />
           </Typography>
         </Box>
       </Box>
