@@ -9,21 +9,23 @@ const Header = () => {
   const theme = useTheme();
 
   return (
-    <Box
-      backgroundColor="#0a4226"
-      position="relative"
-      sx={{
-        minHeight: "300px",
-        [theme.breakpoints.up("md")]: {
-          height: "680px",
-        },
-      }}
-    >
-      <Container>
-        <HeaderBg />
-        <HeaderContent />
-      </Container>
-    </Box>
+    <section>
+      <Box
+        backgroundColor="#0a4226"
+        position="relative"
+        sx={{
+          minHeight: "300px",
+          [theme.breakpoints.up("md")]: {
+            height: "740px",
+          },
+        }}
+      >
+        <Container>
+          <HeaderBg />
+          <HeaderContent />
+        </Container>
+      </Box>
+    </section>
   );
 };
 

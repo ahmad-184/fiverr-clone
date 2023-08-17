@@ -15,7 +15,7 @@ import Signup from "./signup";
 
 const Home = () => {
   return (
-    <Box>
+    <>
       <Helmet>
         <title>Fiverr - Freelance Services Marketplace</title>
       </Helmet>
@@ -30,7 +30,7 @@ const Home = () => {
       <MadeOnFiverr />
       <FiverrGuides />
       <Signup />
-    </Box>
+    </>
   );
 };
 

@@ -12,7 +12,6 @@ const Slides = ({ item }) => {
           cursor: "pointer",
           "& img": {
             width: "100%",
-            height: "100%",
             objectFit: "cover",
             height: "247px",
             display: "block",

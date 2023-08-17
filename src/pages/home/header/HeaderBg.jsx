@@ -6,7 +6,7 @@ import StarIcon from "@mui/icons-material/Star";
 import { headerBackgroundData } from "../../../constants/home";
 
 const HeaderBg = () => {
-  const [activeBg, setActiveBg] = useState(3);
+  const [activeBg, setActiveBg] = useState(2);
   const theme = useTheme();
   const bg_length = headerBackgroundData.length;
 

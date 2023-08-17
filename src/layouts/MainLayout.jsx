@@ -3,15 +3,16 @@ import { Outlet } from "react-router-dom";
 
 import { Box } from "@mui/material";
 
-import { Navbar } from "../components";
+import { Navbar, Footer } from "../components";
 
 const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <Box>
+      <main>
         <Outlet />
-      </Box>
+      </main>
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,13 @@
 import { useState } from "react";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import Collapse from "@mui/material/Collapse";
+import {
+  Box,
+  Divider,
+  Typography,
+  List,
+  ListItemButton,
+  ListItemText,
+  Collapse,
+} from "@mui/material";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import LanguageIcon from "@mui/icons-material/LanguageOutlined";
@@ -15,7 +20,8 @@ import {
   languages,
   businessSolutions,
 } from "../../constants/navbar";
-import { Box, Divider, Typography } from "@mui/material";
+
+import DropdownItem from "../DropdownItem";
 
 export default function DrawerList() {
   const [categoryListOpen, setCategoryListOpen] = useState(false);
@@ -55,9 +61,8 @@ export default function DrawerList() {
         }}
         component="nav"
       >
-        <ListItemButton disableRipple>
-          <ListItemText primary="Sign in" />
-        </ListItemButton>
+        <DropdownItem text="Sign in" />
+
         <ListItemButton disableRipple onClick={handleOpenCategoryList}>
           <ListItemText primary="Browser categories" />
           {categoryListOpen ? <ExpandLess /> : <ExpandMore />}
@@ -96,7 +101,7 @@ export default function DrawerList() {
           <ListItemText
             primary="Business solutions"
             sx={{
-              "& .css-i5j5ye-MuiTypography-root": {
+              "& .MuiTypography-root": {
                 fontWeight: "bold !important",
                 color: "grey.800",
               },
@@ -121,12 +126,7 @@ export default function DrawerList() {
           ))}
         </Collapse>
 
-        <ListItemButton disableRipple>
-          <ListItemText
-            primary="Fiverr Business"
-            sx={{ color: "primary.main" }}
-          />
-        </ListItemButton>
+        <DropdownItem text="Fiverr Budiness" sx={{ color: "primary.main" }} />
       </List>
       <Typography variant="body1" fontWeight="bold">
         General
@@ -140,9 +140,7 @@ export default function DrawerList() {
         }}
         component="nav"
       >
-        <ListItemButton disableRipple>
-          <ListItemText primary="Home" />
-        </ListItemButton>
+        <DropdownItem text="Home" />
 
         <ListItemButton disableRipple onClick={handleOpenLanguagesList}>
           <ListItemText
@@ -195,25 +193,23 @@ export default function DrawerList() {
           ))}
         </Collapse>
 
-        <ListItemButton disableRipple>
-          <ListItemText
-            primary={
-              <Box display="flex" alignItems="center">
-                <AttachMoneyRoundedIcon
-                  sx={{
-                    color: "grey.600",
-                    fontSize: "19px",
-                    position: "relative",
-                    left: -4.5,
-                  }}
-                />
-                <Typography variant="body1" fontWeight="medium">
-                  USD
-                </Typography>
-              </Box>
-            }
-          />
-        </ListItemButton>
+        <DropdownItem
+          text={
+            <Box display="flex" alignItems="center">
+              <AttachMoneyRoundedIcon
+                sx={{
+                  color: "grey.600",
+                  fontSize: "19px",
+                  position: "relative",
+                  left: -4.5,
+                }}
+              />
+              <Typography variant="body1" fontWeight="medium">
+                USD
+              </Typography>
+            </Box>
+          }
+        />
       </List>
     </Box>
   );

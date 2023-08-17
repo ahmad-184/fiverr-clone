@@ -27,112 +27,114 @@ const MadeOnFiverr = () => {
   }, [screen_down_600, screen_down_799, screen_down_1060, screen_up_1060]);
 
   return (
-    <Container
-      backgroundColor="#f5f5f5"
-      py={5}
-      sx={{
-        [theme.breakpoints.up("md")]: {
-          pt: 8,
-          pb: 6.5,
-        },
-        [theme.breakpoints.up("lg")]: {
-          pt: 12,
-          pb: 10,
-        },
-      }}
-    >
-      <Box maxWidth="1350px" mx="auto">
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          mb={3}
-        >
-          <Typography
-            variant="h4"
-            fontSize="27px"
-            color="grey.800"
-            fontWeight="bold"
+    <section>
+      <Container
+        backgroundColor="#f5f5f5"
+        py={5}
+        sx={{
+          [theme.breakpoints.up("md")]: {
+            pt: 8,
+            pb: 6.5,
+          },
+          [theme.breakpoints.up("lg")]: {
+            pt: 12,
+            pb: 10,
+          },
+        }}
+      >
+        <Box maxWidth="1350px" mx="auto">
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mb={3}
+          >
+            <Typography
+              variant="h4"
+              fontSize="27px"
+              color="grey.800"
+              fontWeight="bold"
+              sx={{
+                [theme.breakpoints.up("sm")]: {
+                  fontSize: "32px",
+                },
+              }}
+            >
+              Inspiring Work made on Fiverr
+            </Typography>
+            <Typography
+              variant="body1"
+              fontWeight="medium"
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "none",
+                  md: "flex",
+                  lg: "flex",
+                  xl: "flex",
+                },
+                color: "#446ee7",
+                alignItems: "center",
+                gap: 0,
+                cursor: "pointer",
+              }}
+            >
+              See more
+              <KeyboardArrowRightRoundedIcon
+                sx={{ position: "relative", top: "1px", fontSize: "20px" }}
+              />
+            </Typography>
+          </Box>
+          <Box
+            position="relative"
             sx={{
-              [theme.breakpoints.up("sm")]: {
-                fontSize: "32px",
+              "& .swiper": {
+                height: "345px",
               },
             }}
           >
-            Inspiring Work made on Fiverr
-          </Typography>
-          <Typography
-            variant="body1"
-            fontWeight="medium"
-            sx={{
-              display: {
-                xs: "none",
-                sm: "none",
-                md: "flex",
-                lg: "flex",
-                xl: "flex",
-              },
-              color: "#446ee7",
-              alignItems: "center",
-              gap: 0,
-              cursor: "pointer",
+            <Slider
+              slidesPerView={slidesPerView}
+              spaceBetweenSlide={35}
+              buttonsPosition="46%"
+            >
+              {madeOnFiverrData.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <Slides item={item} />
+                </SwiperSlide>
+              ))}
+            </Slider>
+          </Box>
+          <Box
+            mt={1.5}
+            display={{
+              xs: "block",
+              sm: "block",
+              md: "none",
+              lg: "none",
+              xl: "none",
             }}
           >
-            See more
-            <KeyboardArrowRightRoundedIcon
-              sx={{ position: "relative", top: "1px", fontSize: "20px" }}
-            />
-          </Typography>
+            <Typography
+              variant="body1"
+              fontWeight="medium"
+              sx={{
+                color: "#446ee7",
+                display: "flex",
+                alignItems: "center",
+                gap: 0,
+                cursor: "pointer",
+              }}
+            >
+              See more
+              <KeyboardArrowRightRoundedIcon
+                sx={{ position: "relative", top: "1px", fontSize: "20px" }}
+              />
+            </Typography>
+          </Box>
         </Box>
-        <Box
-          position="relative"
-          sx={{
-            "& .swiper": {
-              height: "345px",
-            },
-          }}
-        >
-          <Slider
-            slidesPerView={slidesPerView}
-            spaceBetweenSlide={35}
-            buttonsPosition="46%"
-          >
-            {madeOnFiverrData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <Slides item={item} />
-              </SwiperSlide>
-            ))}
-          </Slider>
-        </Box>
-        <Box
-          mt={1.5}
-          display={{
-            xs: "block",
-            sm: "block",
-            md: "none",
-            lg: "none",
-            xl: "none",
-          }}
-        >
-          <Typography
-            variant="body1"
-            fontWeight="medium"
-            sx={{
-              color: "#446ee7",
-              display: "flex",
-              alignItems: "center",
-              gap: 0,
-              cursor: "pointer",
-            }}
-          >
-            See more
-            <KeyboardArrowRightRoundedIcon
-              sx={{ position: "relative", top: "1px", fontSize: "20px" }}
-            />
-          </Typography>
-        </Box>
-      </Box>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

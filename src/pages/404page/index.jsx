@@ -27,7 +27,7 @@ const NotFoundPage = () => {
   const screen_up_900 = useMediaQuery("(min-width: 900px)");
 
   return (
-    <div>
+    <main>
       <Helmet>
         <title>Page not found - fiverr</title>
       </Helmet>
@@ -185,7 +185,7 @@ const NotFoundPage = () => {
           </Typography>
         </Box>
       </Box>
-    </div>
+    </main>
   );
 };
 
