@@ -24,7 +24,7 @@ const Signup = () => {
           [theme.breakpoints.up("md")]: {
             py: 10,
             mt: 12,
-            mb: 15,
+            mb: 14,
           },
           [theme.breakpoints.up("lg")]: {
             py: 16,
