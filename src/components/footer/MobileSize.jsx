@@ -1,7 +1,7 @@
 import { Box, List } from "@mui/material";
 
 import footerData from "../../constants/footer";
-import Dropdown from "../Dropdown";
+import Dropdown from "./Dropdown";
 
 const MobileSize = () => {
   return (

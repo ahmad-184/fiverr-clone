@@ -4,6 +4,8 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import { router } from "./routes";
 import theme from "./theme";
 
+import "./App.css";
+
 function App() {
   return (
     <>

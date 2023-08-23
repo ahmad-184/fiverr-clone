@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 import {
   Box,
   Button,
@@ -19,6 +20,9 @@ import NavbarCategoryTabs from "./NavbarCategoryTabs";
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState();
   const theme = useTheme();
+  const { pathname } = useLocation();
+
+  const isHomePage = Boolean(pathname === "/");
 
   const scrollDown_0 = useScrollTrigger({
     threshold: 0,
@@ -35,18 +39,31 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Box position="fixed" top="0px" left="0" right="0" zIndex="3">
+      <Box
+        position={isHomePage ? "fixed" : "absolute"}
+        top="0px"
+        left="0"
+        right="0"
+        zIndex="3"
+      >
         <Box
           display="flex"
           flexDirection="column"
           sx={{
             transition: "background-color 0.5s ease",
-            backgroundColor: scrollDown_0 ? "#fff" : "transparent",
-            borderBottom: is_screen_sm
-              ? "1px solid #e4e5e7"
-              : scrollDown_0
-              ? "1px solid #e4e5e7"
-              : "none",
+            ...(isHomePage
+              ? {
+                  backgroundColor: scrollDown_0 ? "#fff" : "transparent",
+                  borderBottom: is_screen_sm
+                    ? "1px solid #e4e5e7"
+                    : scrollDown_0
+                    ? "1px solid #e4e5e7"
+                    : "none",
+                }
+              : {
+                  backgroundColor: "#fff",
+                  borderBottom: "1px solid #e4e5e7",
+                }),
             [theme.breakpoints.down("sm")]: {
               backgroundColor: "#fff",
               borderBottom: "none",
@@ -77,11 +94,17 @@ const Navbar = () => {
                   onClick={handleOpenCloseDrawer}
                   sx={{
                     fontSize: "35px",
-                    color: is_screen_sm
-                      ? "#404145"
-                      : scrollDown_0
-                      ? "#404145"
-                      : "white",
+                    ...(isHomePage
+                      ? {
+                          color: is_screen_sm
+                            ? "#404145"
+                            : scrollDown_0
+                            ? "#404145"
+                            : "white",
+                        }
+                      : {
+                          color: "#404145",
+                        }),
                     display: {
                       xs: "block",
                       sm: "block",
@@ -93,43 +116,57 @@ const Navbar = () => {
                 />
                 <Logo
                   color={
-                    is_screen_sm
+                    !isHomePage
+                      ? "#404145"
+                      : is_screen_sm
                       ? "#404145"
                       : scrollDown_0
                       ? "#404145"
                       : "white"
                   }
                 />
-                <Button
-                  variant="text"
-                  sx={{
-                    display: {
-                      xs: "block",
-                      sm: "none",
-                      md: "none",
-                      lg: "none",
-                      xl: "none",
-                    },
-                    textTransform: "capitalize",
-                    color: "grey.700",
-                    backgroundColor: "transparent !important",
-                    fontWeight: "bold",
-                    fontSize: "17px",
-                    "&:hover": {
-                      color: "grey.500",
-                    },
-                  }}
-                  disableRipple
-                >
-                  Join
-                </Button>
+                <Link to="/join" style={{ textDecoration: "none" }}>
+                  <Button
+                    variant="text"
+                    sx={{
+                      display: {
+                        xs: "block",
+                        sm: "none",
+                        md: "none",
+                        lg: "none",
+                        xl: "none",
+                      },
+                      textTransform: "capitalize",
+                      color: "grey.700",
+                      backgroundColor: "transparent !important",
+                      fontWeight: "bold",
+                      fontSize: "17px",
+
+                      "&:hover": {
+                        color: "grey.500",
+                      },
+                    }}
+                    disableRipple
+                  >
+                    Join
+                  </Button>
+                </Link>
               </Box>
-              <Searchbar activeOnScroll={scrollDown_130} />
-              <NavbarButtons activeOnScroll={scrollDown_0} />
+              <Searchbar
+                activeOnScroll={scrollDown_130}
+                isHomePage={isHomePage}
+              />
+              <NavbarButtons
+                activeOnScroll={scrollDown_0}
+                isHomePage={isHomePage}
+              />
             </Box>
           </Box>
         </Box>
-        <NavbarCategoryTabs activeOnScroll={scrollDown_130} />
+        <NavbarCategoryTabs
+          activeOnScroll={scrollDown_130}
+          isHomePage={isHomePage}
+        />
         <Drawer
           drawerOpen={drawerOpen}
           handleOpenCloseDrawer={handleOpenCloseDrawer}

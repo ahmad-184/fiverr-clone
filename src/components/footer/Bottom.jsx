@@ -4,7 +4,7 @@ import LanguageIcon from "@mui/icons-material/LanguageOutlined";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
 import AccessibilityIcon from "@mui/icons-material/AccessibilityRounded";
 
-import icons from "../../assets/images/icons";
+import icons from "../../assets/icons/icons";
 
 const Bottom = () => {
   const theme = useTheme();

@@ -1,8 +1,10 @@
 import { Drawer, Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import DrawerList from "./DrawerList";
 
 const DrawerCom = ({ drawerOpen, handleOpenCloseDrawer }) => {
+  const navigate = useNavigate();
   return (
     <Drawer
       anchor="left"
@@ -36,6 +38,10 @@ const DrawerCom = ({ drawerOpen, handleOpenCloseDrawer }) => {
             width: "8.1rem",
             boxShadow: "none !important",
             p: "6px 0px",
+          }}
+          onClick={() => {
+            navigate("/join");
+            handleOpenCloseDrawer();
           }}
         >
           Join Fiverr

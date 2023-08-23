@@ -1,7 +1,7 @@
 import { Box, Button, InputBase, useMediaQuery, useTheme } from "@mui/material";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
-const Searchbar = ({ activeOnScroll }) => {
+const Searchbar = ({ activeOnScroll, isHomePage }) => {
   const theme = useTheme();
   const screen_md = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -21,8 +21,12 @@ const Searchbar = ({ activeOnScroll }) => {
           lg: "flex",
           xl: "flex",
         },
-        visibility: activeOnScroll ? "visible" : "hidden",
-        opacity: activeOnScroll ? "1" : "0",
+        visibility: !isHomePage
+          ? "visible"
+          : activeOnScroll
+          ? "visible"
+          : "hidden",
+        opacity: !isHomePage ? "visible" : activeOnScroll ? "1" : "0",
         transition: "opacity .2s ease",
         flexGrow: "1",
       }}

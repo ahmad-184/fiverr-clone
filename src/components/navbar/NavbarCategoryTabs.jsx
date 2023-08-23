@@ -4,32 +4,47 @@ import { categories } from "../../constants/navbar";
 
 import Container from "../../containers/Container";
 
-const NavbarCategoryTabs = ({ activeOnScroll }) => {
+const display_container = {
+  xs: "none",
+  sm: "flex",
+  md: "flex",
+  lg: "flex",
+  xl: "flex",
+};
+
+const NavbarCategoryTabs = ({ activeOnScroll, isHomePage }) => {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <Container
       backgroundColor="background.paper"
       borderBottom="2px solid #e4e5e7"
       sx={{
-        display: activeOnScroll
-          ? {
-              xs: "none",
-              sm: "flex",
-              md: "flex",
-              lg: "flex",
-              xl: "flex",
-            }
+        display: !isHomePage
+          ? display_container
+          : activeOnScroll
+          ? display_container
           : "none",
         justifyContent: "center",
       }}
     >
-      <Grow in={activeOnScroll} {...(activeOnScroll ? { timeout: 200 } : {})}>
+      <Grow
+        in={!isHomePage ? true : activeOnScroll ? true : false}
+        {...(!isHomePage
+          ? { timeout: 0 }
+          : activeOnScroll
+          ? { timeout: 200 }
+          : {})}
+      >
         <Box
           sx={{
             dipslay: "flex",
             width: "100%",
             justifyContent: "center",
-            visibility: activeOnScroll ? "visible" : "none",
+            visibility: !isHomePage
+              ? "visible"
+              : activeOnScroll
+              ? "visible"
+              : "none",
             transition: "visibility 1.2s ease",
           }}
         >

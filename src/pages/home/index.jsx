@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import { Helmet } from "react-helmet-async";
 
 import Header from "./header";
@@ -10,7 +9,7 @@ import FibBanner from "./fibBanner";
 import Testimonials from "./testimonials";
 import LogoMaker from "./logo-maker";
 import MadeOnFiverr from "./made-on-fiverr";
-import FiverrGuides from "./fiverr-quides";
+import FiverrGuides from "./fiverr-guides";
 import Signup from "./signup";
 
 const Home = () => {

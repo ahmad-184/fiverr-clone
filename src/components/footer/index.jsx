@@ -8,7 +8,7 @@ import Bottom from "./Bottom";
 const Footer = () => {
   return (
     <footer>
-      <Box py={2}>
+      <Box pb={2}>
         <Divider
           sx={{
             backgroundColor: "#e4e5e7",

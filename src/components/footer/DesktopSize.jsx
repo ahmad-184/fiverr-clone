@@ -48,7 +48,7 @@ const DesktopSize = () => {
               {title}
             </Typography>
             {content.map((item, index) => (
-              <Link to={"/"}>
+              <Link to={"/"} key={index}>
                 <span>{item.primary}</span>
                 {item.secondary && (
                   <>

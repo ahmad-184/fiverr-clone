@@ -1,19 +1,25 @@
-import { Suspense, lazy } from "react";
-import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
-import { Box } from "@mui/material";
-
-import { Navbar, Footer } from "../components";
+import { Navbar, Footer, Loader } from "../components";
 
 const MainLayout = () => {
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <Navbar />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </>
+      <ScrollRestoration
+        getKey={(location) => {
+          const paths = ["/"];
+          return paths.includes(location.pathname)
+            ? location.pathname
+            : location.key;
+        }}
+      />
+    </Suspense>
   );
 };
 

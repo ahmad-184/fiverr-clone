@@ -1,10 +1,11 @@
 import { Box, Button, Typography, useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import Container from "../../../containers/Container";
 
 const Signup = () => {
   const theme = useTheme();
-
+  const navigate = useNavigate();
   return (
     <section>
       <Container position="relative">
@@ -73,6 +74,7 @@ const Signup = () => {
                 boxShadow: "none !important",
                 px: 3,
               }}
+              onClick={() => navigate("/join")}
             >
               Join Fiverr
             </Button>
