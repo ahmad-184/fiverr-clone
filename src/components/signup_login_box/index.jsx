@@ -25,7 +25,6 @@ const SignupLoginBox = () => {
       maxWidth="880px"
       width="100%"
       overflow="hidden"
-      backgroundColor="white"
       sx={{
         height: "580px",
         [theme.breakpoints.up("md")]: {
@@ -109,7 +108,15 @@ const SignupLoginBox = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid xs={12} sm={12} md={6} lg={6} xl={6} height="100%">
+        <Grid
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+          height="100%"
+          backgroundColor="white"
+        >
           <Box
             px={4.5}
             pt={7.5}

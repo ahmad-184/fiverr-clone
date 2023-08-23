@@ -5,4 +5,3 @@ export { default as Slider } from "./Slider";
 export { default as SliderArrowButton } from "./SliderArrowButton";
 export { default as VideoModal } from "./VideoModal";
 export { default as Footer } from "./footer";
-export { default as Loader } from "./Loader";
